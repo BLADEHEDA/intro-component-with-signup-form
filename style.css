@@ -1,0 +1,123 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+:root{
+
+    --Red: hsl(0, 100%, 74%) ;
+--Green: hsl(154, 59%, 51%);
+--Blue: hsl(248, 32%, 49%);
+
+
+
+--Dark-Blue: hsl(249, 10%, 26%);
+--Grayish-Blue: hsl(246, 25%, 77%);
+
+}
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border=box;
+    background:url("./images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-position:1em 1em;
+    background-color: hsl(0, 100%, 74%) ;
+}
+.container{
+    width:80%;
+    display:flex;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.left{
+    flex:1;
+    color:white;
+    padding-right:5em;
+    padding-left:1em;
+    margin-top:8rem;
+    
+}
+.right{
+    flex:1; 
+    text-align:center;
+    padding:2em;
+}
+.left-heading{
+font-size:3em;
+}
+.free{
+    font-size:16px; 
+    background:hsl(248, 32%, 49%);
+    color:white;
+    padding:17px;
+    border-radius:10px;
+    margin-bottom:1em;
+}
+.form{
+    background:white;
+    border-radius: 7px;
+    text-align: start;
+    padding:2em;
+}
+.name{
+    padding:15px;
+    margin-top:10px;
+    border:solid 0.1em hsl(249, 10%, 26%);
+    border-radius: 5px;
+    width:90%;
+}
+.name:focus{
+    outline:solid 1px hsl(0, 100%, 74%);
+}
+.button{
+    font-size:16px; 
+    background: hsl(154, 59%, 51%);
+    color:white;
+    padding:15px;
+    width:97%;
+    border-radius:10px;
+    margin-top:1em;   
+    border:none;
+    box-shadow: 10px 1px hsl(154, 59%, 51%);
+    cursor:pointer;
+}
+.click{
+    font-size:11px;
+    margin-left:4em;
+    color:  hsl(249, 10%, 26%);
+    margin-bottom:-5px;
+}
+.click1{
+    color: hsl(0, 100%, 74%);
+}
+.error{
+    color: hsl(0, 100%, 74%);
+    font-size:12px;
+    margin-top:3px;
+}
+@media(max-width:375px){
+
+    .container{
+        width:90%;
+        display:block;
+        margin-top:7em;
+        text-align: center;
+    } 
+    .left{
+        color:white;
+        padding-right:0em;
+        padding-left:0em;
+        margin-top:2rem;
+    }
+    .right{
+        margin-bottom:2rem;
+        padding:0em;
+    }
+    .left-heading{
+        font-size:2em;
+        }
+    .left-content{
+        font-size:1em;
+    }
+
+
+}

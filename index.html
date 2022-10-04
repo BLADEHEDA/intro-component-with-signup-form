@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+<main class="container">
+  <section class="left"> 
+  <h1 class="left-heading"> Learn to code by watching others</h1>
+  <p class="left-content">
+    See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+    but understanding how developers think is invaluable. </p>
+  </section>
+
+      <section class="right">
+        <div class="free">   Try it free 7 days then $20/mo. thereafter </div>
+
+          <form action="" class="form" >   
+          <input type="text"  class="name"  placeholder="First Name"  id="First">
+          <div class="error" id="error1"></div>
+
+          <input type="text" placeholder="Last Name " class="name" id="last" >
+          <div class="error" id="error2"> </div>
+
+          <input type="email" placeholder="Email Address" class="name" id="email" >
+          <div class="error" id="error3"></div>
+
+        <input type="password" placeholder="Password" class="name" id="password" >
+        <div class="error" id="error4"></div>
+
+        <button type="button" class="button" id="button"" onclick="check ()" >   Claim your free trial </button>
+        <p class="click"> By clicking the button, you are agreeing to our <span class="click1">Terms and Services</p>
+
+          </form>
+       
+      </section>
+    
+</main>
+<script src="index.js"></script>
+</body>
+</html>
